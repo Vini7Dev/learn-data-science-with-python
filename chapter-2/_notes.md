@@ -3,5 +3,5 @@
 Execute Python script
 
 ```shell
-python {scriptPath}
+python {script_path}
 ```
