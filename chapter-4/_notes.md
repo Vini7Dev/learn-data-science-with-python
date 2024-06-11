@@ -100,9 +100,11 @@ print('name[-1]', name[-1])
 
 print('name[:-1]', name[:-1])
 
-print('name[1::]', name[1::])
+print('name[2::]', name[2::])
 
-print('name[::2]', name[:2:])
+print('name[:2:]', name[:2:])
+
+print('name[::2]', name[::2])
 
 # String Properties
 
@@ -218,7 +220,7 @@ for number in numbers:
 
 cities = ['Franca', 'São Paulo']
 
-cities.extend('Rio de Janeiro', 'Recife')
+cities.extend(['Rio de Janeiro', 'Recife'])
 
 cities.index('São Paulo')
 
@@ -226,7 +228,7 @@ cities.index('Rifaina')
 
 cities.insert(1, 'Paulo São')
 
-cities.remove(2)
+cities.remove('Paulo São')
 
 cities.reverse()
 
@@ -294,7 +296,7 @@ tuple1.index(False)
 
 list1 = list(tuple1)
 
-list1['John'] = 'Jane'
+list1[0] = 'Jane'
 
 tuple1 = tuple(list1)
 
